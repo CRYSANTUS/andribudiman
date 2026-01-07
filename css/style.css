@@ -1,0 +1,324 @@
+.body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+    min-height: 108vh;
+    display: flex;
+    flex-direction: column;
+}
+body {
+     background-image: url("gedung.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.h2 {
+    text-align: center;
+}
+.materi-perkuliahan {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.Materi {
+    font-size: 150%;
+    color: #000000;
+}
+header {
+    max-width: 600px;
+    margin: 30px auto;
+     background-color: #0e5dac;
+    color: rgb(240, 203, 39);
+    padding: 5px 5px;
+    text-align: center;
+    overflow:hidden;
+    border-radius: 12px;
+   background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #222;}
+
+main {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px 30px;
+    border: 1px;
+    border-radius: 12px;
+   background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(237, 237, 237, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #000000;
+}
+
+.materi-list {
+    list-style: none;
+    padding: 0;
+}
+
+.materi-list li {
+    margin: 10px 0;
+}
+
+.materi-list a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button {   
+ display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    border-radius: 5px;
+} 
+footer {
+    text-align: center;
+    padding: 1px;
+    right: 10px;
+    margin-top: 5px;
+    font-size: 0.50rm;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+}
+
+
+
+/* ===== ANIMASI HEADER ===== */
+
+.hero {
+    background-color: #0e5dac;
+    color: rgb(240, 203, 39);
+    padding: 10px 10px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+   background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #222;
+   
+}
+
+/* Animasi judul */
+.judul-animasi {
+    font-size: 2.9rem;
+    animation: slideDown 1.6s ease-out;
+}
+
+/* Animasi subjudul */
+.subjudul-animasi {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: fadeUp 1.2s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Efek hover */
+.judul-animasi:hover {
+    transition: color 1ms ease;
+}
+
+/* KEYFRAMES */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* ===== KARTU DAFTAR MATERI ===== */
+
+.materi-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.materi-list li {
+    background-color: #e7e7e7;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.materi-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.materi-list a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0080ff;
+    display: block;
+}
+
+
+.isi-materi {
+      margin-bottom: 25px;
+}
+
+.p2 {
+    margin-bottom: 25px;
+}
+
+.p3 {
+    margin-bottom: 25px;
+}
+
+.krg-body {
+    background-color: #f2f2f2;
+    border: 2px solid #00aeff;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+
+.animasi-msk {
+    animation: masuk 1s ease-out forwards;
+}
+@keyframes masuk {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ===== ANIMASI PINDAH HALAMAN ===== */
+
+.page {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideIn 0.6s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+     cursor: pointer;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+body {
+    transition: opacity 0.3s ease;
+}
+
+
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+
+
+/* BACKGROUND GEDUNG AGAR REDUP */
+body {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.568),   /* tingkat gelap (0.3 – 0.6) */
+            rgba(0, 0, 0, 0.589)
+        ),
+        url("gedung.jpg");     /* SESUAIKAN PATH GAMBAR */
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .profil-header {
+        text-align: center;
+    }
+
+    .foto-pribadi {
+        width: 120px;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    #profil, #Keahlian, section {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    #profil p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
